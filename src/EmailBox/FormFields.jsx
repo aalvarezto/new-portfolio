@@ -1,17 +1,19 @@
 "use strict"
 
 import React from "react"
-import { mayus, isMail } from "../utils"
+import creteLabelInput from "./creteLabelInput"
 
-const FormFields = ({ legend, fields }) => (
+const FormFields = ({ props }) => (
 	<fieldset>
-		<legend>{legend}</legend>
-		{fields.map(x => (
-			<div key={x}>
-				<label htmlFor={x}>{mayus(x) + ":"}</label>
-				<input type={isMail(x)} name={x} id={x} />
-			</div>
-		))}
+		<legend>{props.legend}</legend>
+		{props.fields.map(creteLabelInput)}
+		<textarea
+			name="mail-box"
+			id=""
+			cols="30"
+			rows="10"
+		></textarea>
+		<button>Send</button>
 	</fieldset>
 )
 

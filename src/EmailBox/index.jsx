@@ -3,15 +3,12 @@
 import React from "react"
 import FormFields from "./FormFields"
 
-const EmailBox = () => (
-	<div>
+const EmailBox = ({ props }) => (
+	<>
 		<form action="">
-			<FormFields
-				legend="Contact us:"
-				fields={["name", "email", "phone"]}
-			/>
+			<FormFields props={{ ...props }} />
 		</form>
-	</div>
+	</>
 )
 
 export default EmailBox
