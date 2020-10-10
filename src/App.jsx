@@ -2,6 +2,7 @@
 
 import React from "react"
 import EmailBox from "./EmailBox"
+import AppHeader from "./AppHeader"
 
 const contactFields = {
 	legend: "Contact us:",
@@ -10,6 +11,7 @@ const contactFields = {
 
 const App = () => (
 	<>
+		<AppHeader />
 		<h1>Hello There</h1>
 		<EmailBox props={{ ...contactFields }} />
 	</>
