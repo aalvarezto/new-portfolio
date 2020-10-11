@@ -5,25 +5,25 @@ import { css } from "@emotion/core"
 const headerStyles = css`
 	background-color: #101010;
 	color: wheat;
-	height: 80px;
+	height: 5em;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	div {
 		height: 100%;
-		width: 1000px;
+		width: 60em;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		h1 {
 			font-family: Arial, Helvetica, sans-serif;
 			font-weight: 200;
-			font-size: 32px;
-			height: 100%;
+			font-size: 2em;
 			margin: 0;
-			display: flex;
-			align-items: center;
+
 			span {
 				font-weight: 800;
+				margin: 0;
 			}
 		}
 		nav {
@@ -39,8 +39,8 @@ const headerStyles = css`
 					text-decoration: none;
 					list-style: none;
 					color: wheat;
-					padding: 0 20px;
-					font-size: 16px;
+					padding: 0 1.25em;
+					font-size: 1em;
 					height: 100%;
 					display: flex;
 					align-items: center;
