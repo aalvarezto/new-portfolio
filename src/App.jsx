@@ -9,9 +9,14 @@ const contactFields = {
 	fields: ["name", "email", "phone"],
 }
 
+const headerProps = {
+	logo: ["My", "Website"],
+	links: ["Home", "About", "Projects", "Contact"],
+}
+
 const App = () => (
 	<>
-		<AppHeader />
+		<AppHeader props={{ ...headerProps }} />
 		<h1>Hello There</h1>
 		<EmailBox props={{ ...contactFields }} />
 	</>

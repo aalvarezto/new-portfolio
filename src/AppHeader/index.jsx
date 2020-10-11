@@ -1,23 +1,18 @@
 "use strict"
 
-import "./style.css"
 import React from "react"
 import Logo from "./Logo"
 import Links from "./Links"
+import headerStyles from "./styles"
 
-const AppHeader = () => (
-	<header className="header-container">
-		<nav>
-			<Logo text={["My", "Website"]} />
-			<Links
-				links={[
-					"Home",
-					"About",
-					"Projects",
-					"Contact",
-				]}
-			/>
-		</nav>
+const AppHeader = ({ props }) => (
+	<header css={headerStyles}>
+		<div>
+			<Logo text={props.logo} />
+			<nav>
+				<Links links={props.links} />
+			</nav>
+		</div>
 	</header>
 )
 
