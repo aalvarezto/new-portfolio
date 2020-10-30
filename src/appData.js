@@ -12,7 +12,12 @@ const contactFields = {
 
 const headerProps = {
 	logo: ["Andrés", "Alvarez"],
-	links: ["Home", "About", "Projects", "Contact"],
+	links: ["Projects", "Contact"],
 }
 
-export { contactFields, headerProps }
+const footerProps = {
+	logo: ["Andrés", "Alvarez"],
+	links: ["Home", "About", "Projects", "Blog", "Contact"],
+}
+
+export { contactFields, headerProps, footerProps }
